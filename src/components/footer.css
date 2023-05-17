@@ -1,0 +1,59 @@
+.siteFooter{
+    background-image: url("../assets/Group\ 48095598.png");
+    position: relative;
+    background-position: 0px;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 32px;
+}
+
+.siteFooter:hover{
+    background-position: -100px;
+}
+
+.footerContainer{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.headingText{
+    padding-top: 24px;
+}
+.colsWrap{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 64px;
+}
+
+.mainCol{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+.leftCol{
+    align-items: start;
+}
+.rightCol{
+    align-items: start;
+}
+.row{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.mainCol.left{
+    justify-content: center;
+}
+.footerText{
+    margin: 0px;
+    font-size: 24px;
+    font-family: 'Poppins';
+    color: #2C2C2C;
+    line-height: 36px;
+    font-style: normal;
+    font-weight: 500;
+}
+

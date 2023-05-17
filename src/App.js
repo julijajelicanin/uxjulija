@@ -7,13 +7,17 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 // import Home from './pages/Home/home';
 import Header from './components/header';
 import Hero from './components/Hero';
+import SeeWork from './components/myWork';
+import Footer from './components/footer';
 
 function App() {
   return (
     <div className="App">
       <Header/>
       <Hero/>
-      <div style={{height: 1000, backgroundColor: 'pink'}}></div>
+      {/*<div style={{height: 1000, backgroundColor: 'pink'}}></div>*/}
+      <SeeWork/>
+      <Footer/>
     </div>
   );
 }

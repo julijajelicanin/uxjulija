@@ -16,7 +16,7 @@
 .siteHeader{
     width: 100%;
     position: fixed;
-    /* z-index: 3; */
+    z-index: 3;
 }
 .headerContainer {
     box-sizing: border-box;
@@ -24,7 +24,7 @@
     padding-top: 16px;
     padding-bottom: 16px;
     align-items: center;
-    border-bottom: 1px solid rgb(225, 225, 225);
+    border-bottom: 1px solid rgb(188, 188, 188);
     display: flex;
     justify-content: space-between;
 }
