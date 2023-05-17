@@ -1,5 +1,10 @@
 import './footer.css'
-import instagram from '../assets/icons/skill-icons_instagram.svg'
+import instagram from '../assets/icons/instagram.svg'
+import behance from '../assets/icons/behance.svg'
+import dribbble from '../assets/icons/dribbble.svg'
+import linkedin from '../assets/icons/linkedin.svg'
+import gmail from '../assets/icons/gmail.svg'
+import github from '../assets/icons/github.svg'
 
 
 function Footer() {
@@ -16,30 +21,30 @@ function Footer() {
                             <div className='mainCol right'>
                                 <div className='col leftCol'>
                                     <div className='row'>
-                                        <i></i>
-                                        <p>uxjulija@.gmailcom</p>
+                                        <img className='iconPic' src={gmail} alt='gmail icon'></img>
+                                        <p className='textRow'>uxjulija@.gmailcom</p>
                                     </div>
                                     <div className='row'>
-                                        <i></i>
-                                        <p>julijajelicanin</p>
+                                        <img className='iconPic' src={linkedin} alt='linkedin icon'></img>
+                                        <p className='textRow'>julijajelicanin</p>
                                     </div>
                                     <div className='row'>
-                                        <i></i>
-                                        <p>uxjulija</p>
+                                        <img className='iconPic' src={dribbble} alt='dribbble icon'></img>
+                                        <p className='textRow'>uxjulija</p>
                                     </div>
                                 </div>
                                 <div className='col rightCol'>
                                     <div className='row'>
                                         <img className='iconPic' src={instagram} alt='instagram icon'></img>
-                                        <p >uxjulija</p>
+                                        <p className='textRow'>uxjulija</p>
                                     </div>
                                     <div className='row'>
-                                        <i></i>
-                                        <p>julijajelicanin</p>
+                                        <img className='iconPic' src={behance} alt='behance icon'></img>
+                                        <p className='textRow'>julijajelicanin</p>
                                     </div>
                                     <div className='row'>
-                                        <i></i>
-                                        <p>julijajelicanin</p>
+                                        <img className='iconPic' src={github} alt='github icon'></img>
+                                        <p className='textRow'>julijajelicanin</p>
                                     </div>
                                 </div>
                             </div>

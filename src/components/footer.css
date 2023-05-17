@@ -42,13 +42,20 @@
     max-width: 100%;
     display: flex;
     flex-direction: row;
+    margin-bottom: 16px;
+}
+.row:first-child{
+    margin-top: 10px;
+}
+.row:last-child{
+    margin-bottom: 10px;
 }
 
 .mainCol.left{
     justify-content: center;
 }
 .footerText{
-    margin: 0px;
+    margin-top: 32px;
     font-size: 24px;
     font-family: 'Poppins';
     color: #2C2C2C;
@@ -56,4 +63,9 @@
     font-style: normal;
     font-weight: 500;
 }
-
+.iconPic{
+    margin-right: 8px;
+}
+.textRow{
+    margin: 0;
+}
