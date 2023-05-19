@@ -215,6 +215,7 @@
     }
     .colsWraper{
         padding-bottom: 24px;
+        margin-left: 48px;
     }
     .colm.rightCol{
         width: auto;
@@ -224,7 +225,7 @@
     .colm.leftCol{
         width: auto;
         margin-left: 14px;
-        margin-right: 0px;
+        margin-right: 0px
     }
     .copyRightWrap{
         margin: 0 20px;
@@ -241,5 +242,12 @@
         line-break: strict;
     }
 }
-
+@media screen and (max-width: 300px){
+    .colsWraper{
+        margin: 0 32px;
+    }
+    .headingText{
+        font-size: 24px;
+    }
+}
 
