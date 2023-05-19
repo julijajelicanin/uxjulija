@@ -9,7 +9,7 @@ function Hero() {
                 <div className="col textWrap">
                     <h1 className="headingTxt">Hello!</h1>
                     <p className="subTxt">
-                        I'm Julija, a UI/UX Designer based in Serbia. I specialize in creating engaging and user-friendly 
+                        I'm Julija, a UI/UX Designer specialised in creating engaging and user-friendly 
                         digital experiences for websites, mobile applications, 
                         and other digital products.
                     </p>

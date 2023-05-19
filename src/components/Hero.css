@@ -59,6 +59,7 @@
 
 .textWrap{
     align-items: start;
+    justify-content: center;
 }
 .headingTxt{
     width: 100%;
@@ -66,12 +67,107 @@
     color: #5201FF;
     font-size: 54px;
     font-family: 'Poppins';
-    margin-top: 120px;
+    /* margin-top: 120px; */
     margin-bottom: 4px;
+    
 }
 .subTxt{
     font-size: 24px;
     font-weight: 400;
     line-height: 36px;
     margin-top: 0px;
+}
+@media screen and (max-width: 1100px){
+    .heroContainer{
+        padding: 0 32px;
+    }
+    .bgGradient{
+        background-position: 50px;
+        
+    }
+}
+
+@media screen and (max-width: 760px){
+    .heroContainer{
+        padding: 0 14px;
+    }
+    .bgGradient{
+        background-position-x: -100px;
+    }
+    .col.imageWrap{
+        justify-content: end;
+    }
+    .headingTxt{
+        margin-top: 0px;
+    }
+    .subTxt{
+        margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+   
+}
+@media screen and (max-width: 580px){
+    .bgGradient{
+        background-position-x: -150px;
+    }
+    .subTxt{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .headingTxt{
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 8px;
+    }
+
+}
+@media screen and (max-width: 520px){
+    .bgGradient{
+        background-position-x: -150px;
+    }
+    .heroContainer{
+        flex-direction: column;
+    }
+    .col.imageWrap{
+        width: 80%;
+        align-items: flex-end;
+        z-index: 1;
+        padding-left: 80px;
+        
+    }
+    .col.textWrap{
+        padding-top: 40px;
+        width: 80%;
+        z-index: 2;
+    }
+    .heroImage{
+        margin-top: -200px;
+    }
+
+}
+@media screen and (max-width: 430px){
+    /* .button.primary{
+        padding: 12px 24px;
+    } */
+    .col.imageWrap{
+        /* box-sizing: border-box; */
+        padding-left: 60px;
+    }
+    .heroImage{
+        margin-top: -60px;
+    }
+    
+}
+
+@media screen and (max-width: 300px){
+    .heroImage{
+        margin-top: -30px;
+    }
+    .col.textWrap{
+        width: 100%;
+    }
+    .col.imageWrap{
+        padding-left: 30px;
+    }
 }

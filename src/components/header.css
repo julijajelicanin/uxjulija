@@ -83,6 +83,7 @@
     .headerContainer {
         padding-left: 32px;
         padding-right: 32px;
+        background-color: white;
     }
 }
 @media screen and (max-width: 360px) {
