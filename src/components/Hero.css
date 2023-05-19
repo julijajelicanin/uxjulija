@@ -157,16 +157,28 @@
     }
 
 }
-
+@media screen and (max-width: 480px) {
+    .heroContainer{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .col.textWrap{
+        width: 100%;
+    }
+    
+}
 @media screen and (max-width: 430px){
     /* .button.primary{
         padding: 12px 24px;
     } */
     .heroImage{
-        margin-top: -100px;
+        margin-top: -80px;
     }
     .col.imageWrap{
         margin-left: 60px;
+    }
+    .headingTxt{
+        margin-bottom: 16px;
     }
     
 }
@@ -184,4 +196,5 @@
     .subTxt{
         font-size: 16px;
     }
+
 }
