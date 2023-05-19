@@ -1,15 +1,25 @@
 .siteFooter{
     background-image: url("../assets/Group\ 48095598.png");
-    position: relative;
-    background-position: 0px;
-    transition: all 0.3s ease;
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200%; */
+    /* transition: all 0.3s ease; */
     width: 100%;
+    background-position: center;
     margin-top: 32px;
+    animation: animateFooter 2s ease infinite;
 }
+/* 
+@keyframes animateFooter {
+    0% { background-size:200%;}
+    50% { background-size:150%;}
+    100%{background-size:200%;}
+    } */
 
-.siteFooter:hover{
+/* .siteFooter:hover{
     background-position: -100px;
-}
+} */
+
 
 .footerContainer{
     display: flex;
@@ -20,7 +30,7 @@
 .headingText{
     padding-top: 24px;
 }
-.colsWrap{
+.colsWraper{
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -54,6 +64,10 @@
 .mainCol.left{
     justify-content: center;
 }
+.colm{
+    width: 50%;
+}
+
 .footerText{
     margin-top: 32px;
     font-size: 24px;
@@ -62,6 +76,7 @@
     line-height: 36px;
     font-style: normal;
     font-weight: 500;
+    width: 100%;
 }
 .iconPic{
     margin-right: 8px;
@@ -69,3 +84,162 @@
 .textRow{
     margin: 0;
 }
+.copyRightwrap .copyRight{
+    width: 100%;
+}
+@media screen and (max-width: 1100px) {
+    .colsWraper{
+        width: auto;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+    .mainCol{
+        width: 100%;
+    }
+    .mainCol.left{
+        width: 50%;
+    }
+    .mainCol.right{
+        width: 50%;
+        margin-right: 14px;
+    }
+    .colm.rightCol{
+        width: 50%;
+        padding-left: 24px;
+    }
+    .colm.leftCol{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .mainCol.right{
+        width: 60%;
+        margin-right: 14px;
+    }
+    .footerText{
+        font-size: 16px;
+        width: 100%;
+        margin-left: 14px;
+        font-weight: 500;
+        margin-top: 16px;
+        
+    }
+    .colm{
+        width: 50%;
+    }
+    .copyRight{
+        font-size: 12px;
+        width: 100%;
+    }
+    .copyRightwrap{
+        width: 100%;
+    }
+    .mainCol.left{
+        width: 40%;
+    }
+    .mainCol.right{
+        width: 60%;
+        margin-right: 14px;
+    }
+    .row{
+        width: auto;
+    }
+    .colsWraper{
+        margin-left: 14px;
+        margin-right: 14px;
+        padding-bottom: 48px;
+    }
+    .headingText{
+        padding-top: 0px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .colsWraper{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    .mainCol{
+        width: 100%;
+        flex-direction: row;
+    }
+    .mainCol.left{
+        width: 100%;
+    }
+    .headingText{
+        font-size: 32px;
+    }
+    .footerText{
+        width: 100%;
+        margin-right: 14px;
+        font-size: 18px;
+    }
+    .mainCol.right{
+        width: 100%;
+        margin: 0px;
+        
+    }
+    .colm.leftCol{
+        width: 200%;
+        margin-right: 64px;
+        margin-left: 14px;
+    }
+    .colm.rightCol{
+        width: 300%;
+        padding-left: 0px;
+    }
+    .row{
+        width: auto;
+    }
+    
+}
+@media screen and (max-width: 480px) {
+    .colsWraper{
+        margin: 0 32px;
+    }
+    .colm.leftCol{
+        width: 100%;
+        margin-right: 32px;
+        margin-left: 14px;
+    }
+    
+}
+@media screen and (max-width: 430px) {
+    .mainCol.right{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    .colsWraper{
+        padding-bottom: 24px;
+    }
+    .colm.rightCol{
+        width: auto;
+        margin-left: 14px;
+        margin-right: 0px;
+    }
+    .colm.leftCol{
+        width: auto;
+        margin-left: 14px;
+        margin-right: 0px;
+    }
+    .copyRightWrap{
+        margin: 0 20px;
+    }
+    .copyRight{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        line-break: auto;
+    }
+    .footerText{
+        line-height: 30px;
+        font-size: 16px;
+        line-break: strict;
+    }
+}
+
+

@@ -14,12 +14,12 @@ function Footer() {
                 <div className='container textWrap'>
                         <h1 className='headingText'>Contact Me</h1>
                 </div>
-                        <div className='container colsWrap'>
+                        <div className='container colsWraper'>
                             <div className='mainCol left'>
                                 <h3 className='footerText'>Together we can take <br/>your ideas to next level</h3>
                             </div>
                             <div className='mainCol right'>
-                                <div className='col leftCol'>
+                                <div className='colm leftCol'>
                                     <div className='row'>
                                         <img className='iconPic' src={gmail} alt='gmail icon'></img>
                                         <p className='textRow'>uxjulija@.gmailcom</p>
@@ -33,7 +33,7 @@ function Footer() {
                                         <p className='textRow'>uxjulija</p>
                                     </div>
                                 </div>
-                                <div className='col rightCol'>
+                                <div className='colm rightCol'>
                                     <div className='row'>
                                         <img className='iconPic' src={instagram} alt='instagram icon'></img>
                                         <p className='textRow'>uxjulija</p>

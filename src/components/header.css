@@ -52,6 +52,7 @@
     .headerContainer {
         padding-left: 14px;
         padding-right: 14px;
+        width: 100%;
     }
     /* Mobile Menu */
     .mobileToggle{
