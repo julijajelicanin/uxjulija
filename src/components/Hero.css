@@ -1,5 +1,7 @@
 .heroSection{
     padding-top: 64px;
+    background-image: url("../assets/Group\ 48095598.png");
+    background-position: 40% 40%;
 }
 .heroImage{
     max-width: 100%;
@@ -11,6 +13,9 @@
 .col {
     width: 50%;
 }
+.button.primary{
+    cursor: pointer;
+}
 /* 
 .bgGradient {
     background-image: radial-gradient(circle, rgba(92, 144, 222, 0.7)20%, transparent 80%),
@@ -21,9 +26,10 @@
     background-size: 400% 400%;
     animation: animateGradient 35s ease infinite;
 } */
+/*
 .bgGradient{
     background-image: url("../assets/Group\ 48095598.png");
-}
+}*/
 /* 
 .bgGradient::before{
     display: block;
@@ -81,10 +87,10 @@
 @media screen and (max-width: 1100px){
     .heroContainer{
         padding: 0 32px;
-    }
+    }/*
     .bgGradient{
         background-position: 50px;
-    }
+    }*/
     .headingTxt{
         line-height: 64px;
         margin-bottom: 10px;
@@ -107,9 +113,10 @@
     .heroContainer{
         padding: 0 14px;
     }
+    /*
     .bgGradient{
         background-position-x: -100px;
-    }
+    }*/
     .col.imageWrap{
         justify-content: end;
     }
@@ -134,9 +141,9 @@
 }
 
 @media screen and (max-width: 580px){
-    .bgGradient{
+    /*.bgGradient{
         background-position-x: -150px;
-    }
+    }*/
     .heroContainer{
         flex-direction: column;
     }

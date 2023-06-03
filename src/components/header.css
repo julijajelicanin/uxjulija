@@ -5,7 +5,13 @@
     color: #101010;
     margin-right: 24px;
 }
-
+/* addes this to position calendly button in line */
+.headerNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 .headerLogo{
     text-decoration: none;
     font-size: 20px;
@@ -46,6 +52,18 @@
     .headerContainer {
         padding-left: 32px;
         padding-right: 32px;
+    }
+    .navLink{
+        width: 100%;
+    }
+    .popup-button{
+        width: 100%;
+    }
+    .button.primary.headerButton{
+        width: 100%;
+    }
+    .headerNav.open{
+        align-items: start;
     }
 }
 @media screen and (max-width: 760px) {
