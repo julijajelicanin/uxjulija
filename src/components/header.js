@@ -20,10 +20,50 @@ class Header extends Component {
           </div>
         );
       };
+
+    //making custom onScroll event
+    constructor(props) {
+        super(props);
+    
+        this.state = {
+          scrolledPast150: false,
+        };
+      }
+    // changeBackground=()=>{
+    //     console.log(window.scrollY);
+    // }
+    // componentDidMount() {
+    //     window.addEventListener('scroll', this.changeBackground, true);
+    // }
+    // componentWillUnmount() {
+    //     window.removeEventListener('scroll', this.handleScroll);
+    //   }
+    handleScroll = () => {
+        const { scrolledPast150 } = this.state;
+    
+        if (!scrolledPast150 && window.scrollY > 150) {
+          this.setState({ scrolledPast150: true });
+        } else if (scrolledPast150 && window.scrollY <= 150) {
+          this.setState({ scrolledPast150: false });
+        }
+      };
+    
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+    }
+    
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+    }
     render() {
+        const { scrolledPast150 } = this.state;
+
+        const navbarBackgroundChange = {
+            backgroundColor: scrolledPast150 ? '#FFE7FB' : 'transparent',
+        };
         return (
 
-            <header className="siteHeader">
+            <header className="siteHeader" style={navbarBackgroundChange}>
                 <section className="container headerContainer">
                     <a className="headerLogo">Julija Jelicanin</a>
                         <nav className={this.state.open ? 'headerNav open' : 'headerNav'}>
