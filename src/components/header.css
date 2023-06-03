@@ -53,18 +53,10 @@
         padding-left: 32px;
         padding-right: 32px;
     }
-    .navLink{
-        width: 100%;
-    }
-    .popup-button{
-        width: 100%;
-    }
-    .button.primary.headerButton{
-        width: 100%;
-    }
-    .headerNav.open{
+    
+    /* .headerNav.open{
         align-items: start;
-    }
+    } */
 }
 @media screen and (max-width: 760px) {
     .headerContainer {
@@ -95,6 +87,15 @@
         padding-top: 24px;
         padding-bottom: 24px;
         margin-right: 0;
+    }
+    .navLink{
+        width: 100%;
+    }
+    .popup-button{
+        width: 100%;
+    }
+    .button.primary.headerButton{
+        width: 100%;
     }
 }
 @media screen and (max-width: 480px) {
