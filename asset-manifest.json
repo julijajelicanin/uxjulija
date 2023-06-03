@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/uxjulija/static/css/main.c2ae101f.css",
-    "main.js": "/uxjulija/static/js/main.8dfbd4a6.js",
+    "main.css": "/uxjulija/static/css/main.c3f544c2.css",
+    "main.js": "/uxjulija/static/js/main.33dea7ad.js",
     "static/media/work5.png": "/uxjulija/static/media/work5.6277686a9fe166e4a633.png",
     "static/media/hero-image.png": "/uxjulija/static/media/hero-image.fc3790a4e70bc49af68d.png",
     "static/media/Group 48095598.png": "/uxjulija/static/media/Group 48095598.1bb2dcab4c09e5f987a0.png",
@@ -15,15 +15,15 @@
     "static/media/instagram.svg": "/uxjulija/static/media/instagram.3a17938aaca551d7d691233d6b3ffe4a.svg",
     "static/media/behance.svg": "/uxjulija/static/media/behance.dfa066709d34a2db1ed46ebd31a98b9a.svg",
     "static/media/dribbble.svg": "/uxjulija/static/media/dribbble.4a0e56ead463a0a5fd25b6ebb4839d84.svg",
-    "static/media/github.svg": "/uxjulija/static/media/github.1f8859f75bee876f3965546f06beb67d.svg",
     "index.html": "/uxjulija/index.html",
+    "static/media/github.svg": "/uxjulija/static/media/github.1f8859f75bee876f3965546f06beb67d.svg",
     "static/media/linkedin.svg": "/uxjulija/static/media/linkedin.840081deabbdf03701d9f4e38efaff67.svg",
     "static/media/gmail.svg": "/uxjulija/static/media/gmail.b6c851ada6840a6d548c253f2f772a50.svg",
-    "main.c2ae101f.css.map": "/uxjulija/static/css/main.c2ae101f.css.map",
-    "main.8dfbd4a6.js.map": "/uxjulija/static/js/main.8dfbd4a6.js.map"
+    "main.c3f544c2.css.map": "/uxjulija/static/css/main.c3f544c2.css.map",
+    "main.33dea7ad.js.map": "/uxjulija/static/js/main.33dea7ad.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2ae101f.css",
-    "static/js/main.8dfbd4a6.js"
+    "static/css/main.c3f544c2.css",
+    "static/js/main.33dea7ad.js"
   ]
 }
