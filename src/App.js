@@ -7,7 +7,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 // import Home from './pages/Home/home';
 import Header from './components/header';
 import Hero from './components/Hero';
-import SeeWork from './components/myWork';
+import SeeWork from './components/myWorkNew';
 import Footer from './components/footer';
 
 function App() {

@@ -24,6 +24,11 @@
     position: fixed;
     z-index: 3;
 }
+.siteHeader.active{
+    /* background-color: #FFE7FB ; */
+    background-color: white;
+    
+}
 .headerContainer {
     box-sizing: border-box;
     height: 64px;
@@ -73,7 +78,8 @@
     }
     .headerNav {
         box-sizing: border-box;
-        background-color: #FFE7FB;
+        /* background-color: #FFE7FB; */
+        background-color: white;
         padding: 24px;
         position: fixed;
         width: 100%;

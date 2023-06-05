@@ -59,11 +59,14 @@ class Header extends Component {
         const { scrolledPast150 } = this.state;
 
         const navbarBackgroundChange = {
-            backgroundColor: scrolledPast150 ? '#FFE7FB' : 'transparent',
+            // backgroundColor: scrolledPast150 ? '#FFE7FB' : 'transparent',
+            // backgrounColor: 'transparent'
+            // filter: 'blur(60%)'
         };
         return (
 
-            <header className="siteHeader" style={navbarBackgroundChange}>
+            <header className={scrolledPast150 ? 'siteHeader active' : 'siteHeader'}>
+                {/* <header className="siteHeader" style={navbarBackgroundChange}> */}
                 <section className="container headerContainer">
                     <a className="headerLogo">Julija Jelicanin</a>
                         <nav className={this.state.open ? 'headerNav open' : 'headerNav'}>
@@ -74,7 +77,7 @@ class Header extends Component {
                             {/* <button className="button primary">Schedule a call</button> */}
                             <this.PopupComponent/>
                         </nav>
-                        <div class='mobileToggle open' onClick={this.handleClick}>
+                        <div className='mobileToggle open' onClick={this.handleClick}>
                             <i id='bar' className={this.state.open ? 'fas fa-times' : 'fas fa-bars'}></i>
                             {/* <i id='bar' className='fas fa-bars'></i> */}
                         </div>

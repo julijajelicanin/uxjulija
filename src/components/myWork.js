@@ -31,7 +31,7 @@ function SeeWork(){
                         </div>
                     </div>
                     <div className='container buttonWrap'>
-                        <button className='button secondary'>See My Work</button>
+                        <button className='button secondary'>See More</button>
                     </div>
                 </div>
         </section>
