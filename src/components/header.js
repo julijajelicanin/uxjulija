@@ -7,6 +7,7 @@ class Header extends Component {
     state={open:false}
     handleClick=()=>{
         this.setState({open:!this.state.open})
+
     }
 
     PopupComponent = () => {
@@ -65,7 +66,6 @@ class Header extends Component {
         behavior: 'smooth',
         });
     };
-
     render() {
         const { scrolledPast150 } = this.state;
 
@@ -88,7 +88,7 @@ class Header extends Component {
                             {/* <button className="button primary">Schedule a call</button> */}
                             <this.PopupComponent/>
                         </nav>
-                        <div className='mobileToggle open' onClick={this.handleClick}>
+                        <div className='mobileToggle open' onClick={this.handleClick} >
                             <i id='bar' className={this.state.open ? 'fas fa-times' : 'fas fa-bars'}></i>
                             {/* <i id='bar' className='fas fa-bars'></i> */}
                         </div>
