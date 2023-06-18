@@ -55,6 +55,17 @@ class Header extends Component {
     componentWillUnmount() {
         window.removeEventListener('scroll', this.handleScroll);
     }
+
+//////making on scroll for header
+
+    handleScrollHeader = (event, scrollValue) => {
+        event.preventDefault();
+        window.scrollTo({
+        top: scrollValue,
+        behavior: 'smooth',
+        });
+    };
+
     render() {
         const { scrolledPast150 } = this.state;
 
@@ -68,12 +79,12 @@ class Header extends Component {
             <header className={scrolledPast150 ? 'siteHeader active' : 'siteHeader'}>
                 {/* <header className="siteHeader" style={navbarBackgroundChange}> */}
                 <section className="container headerContainer">
-                    <a className="headerLogo">Julija Jelicanin</a>
+                    <a href="#" className="headerLogo" onClick={(event) => this.handleScrollHeader(event, 0)}>Julija Jelicanin</a>
                         <nav className={this.state.open ? 'headerNav open' : 'headerNav'}>
-                            <a className="navLink">Home</a>
-                            <a className="navLink">Work</a>
-                            <a className="navLink">About me</a>
-                            <a className="navLink">Contact</a>
+                            <a href="#" className="navLink" onClick={(event) => this.handleScrollHeader(event, 0)}>Home</a>
+                            <a href="#" className="navLink" onClick={(event) => this.handleScrollHeader(event, 760)}>Work</a>
+                            {/* <a className="navLink">About me</a> */}
+                            <a href="#" className="navLink" onClick={(event) => this.handleScrollHeader(event, 4000)}>Contact</a>
                             {/* <button className="button primary">Schedule a call</button> */}
                             <this.PopupComponent/>
                         </nav>

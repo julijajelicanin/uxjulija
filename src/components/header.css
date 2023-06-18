@@ -53,7 +53,12 @@
     height: 32px;
     flex-shrink: 0;
 }
-
+.navLink{
+    cursor: pointer;
+}
+.headerLogo{
+    cursor: pointer;
+}
 
 /* Media Queries */
 @media screen and (max-width: 1100px) {
