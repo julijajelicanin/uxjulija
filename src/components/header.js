@@ -29,6 +29,16 @@ class Header extends Component {
         this.state = {
           scrolledPast150: false,
         };
+        
+        this.state = {
+            isToggleOpen: false
+          };
+
+      }
+      handleToggleClick = () => {
+        this.setState(prevState => ({
+          isToggleOpen: !prevState.isToggleOpen
+        }));
       }
     // changeBackground=()=>{
     //     console.log(window.scrollY);
@@ -74,13 +84,18 @@ class Header extends Component {
             // backgrounColor: 'transparent'
             // filter: 'blur(60%)'
         };
+
+        const { isToggleOpen } = this.state;
+
         return (
 
             <header className={scrolledPast150 ? 'siteHeader active' : 'siteHeader'}>
                 {/* <header className="siteHeader" style={navbarBackgroundChange}> */}
-                <section className="container headerContainer">
+                {/* <section className="container headerContainer"> */}
+                <section className={`container headerContainer ${isToggleOpen ? 'open' : ''}`}>
+                {/* <section className={className={`container ${open ? 'headerContainer active' : 'headerContainer'}`}}> */}
                     <a href="#" className="headerLogo" onClick={(event) => this.handleScrollHeader(event, 0)}>Julija Jelicanin</a>
-                        <nav className={this.state.open ? 'headerNav open' : 'headerNav'}>
+                        <nav className={this.state.isToggleOpen ? 'headerNav open' : 'headerNav'}>
                             <a href="#" className="navLink" onClick={(event) => this.handleScrollHeader(event, 0)}>Home</a>
                             <a href="#" className="navLink" onClick={(event) => this.handleScrollHeader(event, 760)}>Work</a>
                             {/* <a className="navLink">About me</a> */}
@@ -88,8 +103,12 @@ class Header extends Component {
                             {/* <button className="button primary">Schedule a call</button> */}
                             <this.PopupComponent/>
                         </nav>
-                        <div className='mobileToggle open' onClick={this.handleClick} >
+                        {/* <div className='mobileToggle open' onClick={this.handleClick} >
                             <i id='bar' className={this.state.open ? 'fas fa-times' : 'fas fa-bars'}></i>
+                            {/* <i id='bar' className='fas fa-bars'></i> </div>*/}
+                           
+                        <div className='mobileToggle open' onClick={this.handleToggleClick} >
+                            <i id='bar' className={this.state.isToggleOpen ? 'fas fa-times' : 'fas fa-bars'}></i>
                             {/* <i id='bar' className='fas fa-bars'></i> */}
                         </div>
                 </section>
