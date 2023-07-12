@@ -22,7 +22,7 @@ function Footer() {
                                 <div className='colm leftCol'>
                                     <div className='row'>
                                         <img className='iconPic' src={gmail} alt='gmail icon'></img>
-                                        <p className='textRow'>uxjulija@.gmailcom</p>
+                                        <p className='textRow'>uxjulija@gmail.com</p>
                                     </div>
                                     <div className='row'>
                                         <img className='iconPic' src={linkedin} alt='linkedin icon'></img>
